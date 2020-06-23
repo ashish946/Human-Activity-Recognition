@@ -6,6 +6,7 @@ def index(request):
 
 def result(request):
     n=request.GET['num']
-    b=HAR.model(n)
+    name=request.GET['name']
+    b=HAR.model(int(n))
     print(b)
-    return render(request,'result.html',{'res':b})
+    return render(request,'result.html',{'res':b,'name':name})

@@ -36,6 +36,5 @@ def model(n):
     for i in model.predict(x_test):
         arr.append(i)
     return arr[n]
-n=int(input())
-print(model(n))
+
 
