@@ -22,13 +22,17 @@
 <body>
  <h1 class="pt-5 pb-5">Human Activity Recognition</h1>
  <div class="container">
-  <form action="{% url 'result' %}">
+   <center>
+    <form action="{% url 'result' %}">
       <label><b>Enter the person number :</b></label>
-    <input type="number" name="num" id="num" required /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="num" id="num" required /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <label><b>Enter the name :</b></label>
-      <input type="text" name="name" required />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button type="submit" name="submit" class="btn btn-warning">Precise</button>
-  </form>
+      <input type="text" name="name" required />
+      <br><br><br>
+      <button type="submit" name="submit" class="btn btn-warning">Predict</button>
+
+    </form>
+  </center>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
